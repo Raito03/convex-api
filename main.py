@@ -68,5 +68,4 @@ async def search_coursera(request: Request):
     except requests.RequestException as e:
         return {"error": f"Failed to fetch data: {str(e)}"}
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
+
